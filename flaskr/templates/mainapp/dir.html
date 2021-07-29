@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Dir{% endblock %}
+{% block header %}Dir{% endblock %}
+{% block content %}
+  <form action="{{ url_for('dir') }}" method=post>
+    Directory to list:
+      <br>
+    <input type=text size=30 name=dirText>
+      <br>
+      <br>
+    <input type="submit" class="btn-primary" value="List it!">
+  </form>
+{% endblock %}

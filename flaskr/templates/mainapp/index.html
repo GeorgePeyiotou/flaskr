@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Index{% endblock %}
+{% block header %}Index{% endblock %}
+{% block content %}
+  Hey dude
+  <br>
+  <br>
+  <form action="{{ url_for('echo') }}" method=get>
+    <input type="submit" class="btn-primary" value="Echo Page">
+  </form>
+  <br>
+  <br>
+  <form action="{{ url_for('dir') }}" method=get>
+    <input type="submit" class="btn-primary" value="Dir Page">
+  </form>
+
+{% endblock %}
